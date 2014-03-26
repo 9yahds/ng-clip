@@ -1,6 +1,7 @@
 /*jslint node: true */
 /*global ZeroClipboard */
-'use strict';
+
+(function(window, angular, undefined) {'use strict';
 
 angular.module('ngClipboard', []).
   provider('ngClip', function() {
@@ -52,3 +53,5 @@ angular.module('ngClipboard', []).
       }
     };
   }]);
+
+})(window, window.angular);
